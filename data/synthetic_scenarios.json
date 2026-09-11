@@ -1,0 +1,56 @@
+{
+  "dataset_metadata": {
+    "title": "Synthetic Mississippi CMV Evidence-Issue Scenarios",
+    "publisher": "Jones Law P.A. / Jones Law Group",
+    "synthetic": true,
+    "version": "0.1.0-draft",
+    "last_updated": "2026-08-28",
+    "warning": "Every scenario is invented for education and schema testing. No scenario represents a client, case, collision, defendant, result, firm statistic, or allegation."
+  },
+  "scenarios": [
+    {
+      "scenario_id": "SYNTHETIC-MS-CMV-001",
+      "synthetic": true,
+      "scenario_type": "rear-end commercial-truck collision",
+      "illustrative_location": "Hinds County, Mississippi",
+      "potential_evidence_sources_to_investigate": [
+        "ELD records and supporting documents",
+        "tractor telematics and GPS",
+        "ADAS warnings or interventions",
+        "engine/vehicle diagnostic download",
+        "road-facing and driver-facing camera systems",
+        "dispatch messages and load instructions",
+        "driver qualification and safety files",
+        "maintenance, inspection, and repair records"
+      ],
+      "illustrative_questions": [
+        "Was following distance, speed, or cruise-control status available from any vehicle or telematics system?",
+        "Did any ADAS issue a warning or apply braking, and what vehicle configuration or calibration records exist?",
+        "What communications reached the driver before impact?"
+      ],
+      "legal_conclusion": null,
+      "factual_conclusion": null
+    },
+    {
+      "scenario_id": "SYNTHETIC-MS-CMV-002",
+      "synthetic": true,
+      "scenario_type": "commercial delivery-vehicle intersection collision",
+      "illustrative_location": "Warren County, Mississippi",
+      "potential_evidence_sources_to_investigate": [
+        "vehicle gateway and GPS trip data",
+        "route assignment and delivery application records",
+        "mobile-device and hands-free system records",
+        "vehicle camera clips and nearby surveillance",
+        "driver training and qualification records",
+        "inspection and maintenance records"
+      ],
+      "illustrative_questions": [
+        "Which application assigned or changed the route and delivery stop?",
+        "What timestamps, device identifiers, edits, and location accuracy accompany the data?",
+        "Do original video files include pre-event and post-event context and metadata?"
+      ],
+      "legal_conclusion": null,
+      "factual_conclusion": null
+    }
+  ]
+}

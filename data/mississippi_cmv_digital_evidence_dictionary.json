@@ -1,0 +1,267 @@
+{
+  "dataset_metadata": {
+    "title": "Mississippi Commercial Truck Digital Evidence Guide",
+    "short_title": "Mississippi CMV Digital Evidence",
+    "publisher": {
+      "legal_name": "Jones Law P.A.",
+      "public_name": "Jones Law Group",
+      "website": "https://www.injuredinmississippi.com/",
+      "address": "3417 North State Street, Jackson, MS 39216",
+      "telephone": "+1-601-272-2406"
+    },
+    "attorney_editor": {
+      "name": "Baskin L. Jones, Esq.",
+      "bar_jurisdiction": "Mississippi",
+      "bar_number": "103589"
+    },
+    "jurisdictional_focus": "Mississippi",
+    "version": "0.1.0-draft",
+    "last_verified": "2026-09-11",
+    "record_count": 8,
+    "license_for_original_annotations": "CC BY 4.0",
+    "methodology": "Attorney-edited data dictionary derived from current official federal regulations and public manufacturer or vendor documentation. Product capabilities are paraphrased and linked; no proprietary manual, client file, discovery production, or commercial database text is reproduced.",
+    "important_limitations": [
+      "A listed capability does not prove that the capability was installed, enabled, subscribed to, functioning, recorded, retained, or retrievable in a particular vehicle or event.",
+      "Vehicle, hardware, firmware, account settings, connectivity, power, retention settings, and custodian practices can change available data.",
+      "Federal regulatory retention periods are minimum recordkeeping rules for defined records, not guaranteed lifespans for every electronic artifact and not safe waiting periods for litigation preservation.",
+      "This dataset contains no real case, client, claimant, opposing party, settlement, medical, police-report, or discovery data."
+    ],
+    "disclaimer": "General educational information only; not legal advice or an expert evidence opinion. Verify current law, product documentation, vehicle configuration, and case-specific facts."
+  },
+  "records": [
+    {
+      "record_id": "federal-eld-rods",
+      "name": "Electronic logging device records and records of duty status",
+      "system_class": "federally regulated driver-hours record",
+      "custodian_examples": [
+        "motor carrier",
+        "ELD account administrator",
+        "ELD service provider, depending on contract and system architecture"
+      ],
+      "possible_data_categories": [
+        "driver and carrier identifiers",
+        "vehicle identifiers",
+        "duty-status events",
+        "date and time",
+        "location information required by the ELD specification",
+        "edits, annotations, certifications, malfunctions, and diagnostic events"
+      ],
+      "federal_minimum_retention": {
+        "period": "not less than 6 months from the motor carrier's receipt",
+        "authority": "49 CFR 395.8(k)(1)"
+      },
+      "preservation_questions": [
+        "Which ELD make, model, registration, account, and driver profile applied?",
+        "Were unassigned-driving, edits, annotations, diagnostics, and original export files preserved?",
+        "Which supporting documents can be matched to the driver's record of duty status?"
+      ],
+      "availability_note": "The precise fields and export format depend on the applicable ELD specification, device, account, and record. Confirm the current eCFR text and the registered device documentation.",
+      "source_type": "official federal regulation",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395/subpart-A/section-395.8",
+      "last_verified": "2026-09-11"
+    },
+    {
+      "record_id": "federal-eld-backup",
+      "name": "ELD backup records",
+      "system_class": "federally regulated electronic record backup",
+      "custodian_examples": [
+        "motor carrier",
+        "ELD account administrator"
+      ],
+      "possible_data_categories": [
+        "backup copy of driver ELD records on a device separate from the original storage"
+      ],
+      "federal_minimum_retention": {
+        "period": "6 months",
+        "authority": "49 CFR 395.22(i)(1)"
+      },
+      "preservation_questions": [
+        "Where was the separate backup maintained?",
+        "Does the preserved export include metadata, edits, annotations, and diagnostic events?"
+      ],
+      "availability_note": "The rule addresses backup and security of ELD records; it does not describe every vendor's separate operational, portal, video, or telematics retention setting.",
+      "source_type": "official federal regulation",
+      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395/subpart-B/section-395.22",
+      "last_verified": "2026-09-11"
+    },
+    {
+      "record_id": "detroit-assurance-aba5",
+      "name": "Detroit Assurance with Active Brake Assist 5",
+      "vendor": "Detroit / Daimler Truck North America",
+      "system_class": "advanced driver-assistance and collision-mitigation system",
+      "publicly_described_inputs_or_features": [
+        "forward camera and radar",
+        "Active Brake Assist 5",
+        "adaptive cruise control",
+        "lane-departure warning",
+        "tailgate warning",
+        "traffic-sign display on configured systems"
+      ],
+      "related_platforms_to_investigate": [
+        "Detroit Connect",
+        "vehicle diagnostic systems",
+        "fleet safety reports and event notifications"
+      ],
+      "preservation_questions": [
+        "What exact Detroit Assurance generation, features, hardware, calibration, and software were present?",
+        "Was Detroit Connect enabled and, if so, which events or reports were transmitted?",
+        "Were diagnostic downloads, warning/intervention records, fault codes, calibration, repair, and configuration records preserved?"
+      ],
+      "availability_note": "The official product pages describe safety features and connected-safety reporting. They do not establish that any specific collision generated a stored, downloadable event or that every listed field exists. Obtain vehicle- and account-specific documentation.",
+      "federal_minimum_retention": null,
+      "source_type": "official manufacturer product documentation",
+      "source_urls": [
+        "https://www.demanddetroit.com/assurance/",
+        "https://www.demanddetroit.com/connect/"
+      ],
+      "last_verified": "2026-09-11"
+    },
+    {
+      "record_id": "bendix-wingman-fusion",
+      "name": "Bendix Wingman Fusion",
+      "vendor": "Bendix Commercial Vehicle Systems",
+      "system_class": "integrated advanced driver-assistance and collision-mitigation system",
+      "publicly_described_inputs_or_features": [
+        "radar",
+        "video camera",
+        "brake-system information",
+        "autonomous emergency braking",
+        "active cruise with braking",
+        "lane-departure warning",
+        "overspeed alerts or intervention on configured systems",
+        "stationary-vehicle braking on configured systems"
+      ],
+      "related_platforms_to_investigate": [
+        "SafetyDirect by Bendix CVS",
+        "vehicle/OEM diagnostic systems",
+        "fleet safety-event reports and triggered video when configured"
+      ],
+      "preservation_questions": [
+        "Which Wingman Fusion generation and OEM-specific feature set was installed?",
+        "Was SafetyDirect or another camera/event platform connected and subscribed?",
+        "Were radar/camera/brake faults, calibrations, interventions, triggered clips, and fleet alerts preserved?"
+      ],
+      "availability_note": "Bendix states that truck manufacturers may implement different feature sets. Public descriptions do not prove that a specific event or clip was stored or retrievable.",
+      "federal_minimum_retention": null,
+      "source_type": "official manufacturer product documentation",
+      "source_url": "https://www.bendix.com/en/products/advanced-driver-assistance-systems/bendix-wingman-fusion%E2%84%A2/",
+      "last_verified": "2026-09-11"
+    },
+    {
+      "record_id": "geotab-go9",
+      "name": "Geotab GO9",
+      "vendor": "Geotab",
+      "system_class": "telematics gateway",
+      "publicly_described_data_or_features": [
+        "GPS",
+        "voltage",
+        "accelerometer",
+        "engine data when supported",
+        "gyroscope",
+        "offline log memory",
+        "collision data buffer described in the GO9 support document"
+      ],
+      "public_memory_description": "Geotab's GO9 support document describes up to 80,000 offline logs, a buffer of more than 100 minutes of second-by-second collision data, and immediate transmission of the last 72 records (1.2 minutes) for accelerometer-triggered collision-level events.",
+      "preservation_questions": [
+        "What GO device model, serial number, harness, firmware, plan, and vehicle assignment applied?",
+        "What raw logs, collision reconstruction data, exceptions, trips, GPS, accelerometer, engine, and audit records exist?",
+        "Was the device powered, connected, calibrated, moved, replaced, or removed around the event?"
+      ],
+      "availability_note": "The support document describes device capabilities, not proof that a specific account retained or transmitted each field. Vehicle compatibility, triggers, coverage, power, configuration, and account retention affect availability.",
+      "federal_minimum_retention": null,
+      "source_type": "official vendor support documentation",
+      "source_urls": [
+        "https://support.geotab.com/go-devices/go9/doc/go9-document",
+        "https://support.geotab.com/mygeotab/doc/accelerometer-data"
+      ],
+      "last_verified": "2026-09-11"
+    },
+    {
+      "record_id": "samsara-vehicle-gateway",
+      "name": "Samsara Vehicle Gateway",
+      "vendor": "Samsara",
+      "system_class": "telematics and connected-fleet gateway",
+      "publicly_described_data_or_features": [
+        "cloud connectivity",
+        "real-time and historical tracking of sensor data",
+        "GPS-dependent tracking",
+        "harsh-event detection settings",
+        "ELD, trip, route, and vehicle integrations depending on configuration and license"
+      ],
+      "preservation_questions": [
+        "Which Vehicle Gateway model, serial number, cable, license, driver/vehicle assignment, and settings applied?",
+        "Which trips, GPS points, harsh events, diagnostics, HOS, dispatch, messages, camera clips, and audit logs exist in the account?",
+        "Was the vehicle deleted, deactivated, transferred, unplugged, in low-power mode, or outside coverage?"
+      ],
+      "availability_note": "Samsara documentation distinguishes deactivation, transfer, and deletion and describes configuration-dependent functionality. A device or account may not capture or retain every proposed field. Preserve the account and identify the exact model/settings promptly.",
+      "federal_minimum_retention": null,
+      "source_type": "official vendor support documentation",
+      "source_urls": [
+        "https://kb.samsara.com/hc/en-us/articles/4411518920205-Vehicle-Gateway-Models",
+        "https://kb.samsara.com/hc/en-us/articles/360002430494-Managing-Vehicle-Gateway-VG-Device-Settings",
+        "https://kb.samsara.com/hc/en-us/articles/360043133311-Install-a-Vehicle-Gateway"
+      ],
+      "last_verified": "2026-09-11"
+    },
+    {
+      "record_id": "fleet-dispatch-communications",
+      "name": "Fleet dispatch, safety, and driver communications",
+      "system_class": "business and communications records",
+      "custodian_examples": [
+        "motor carrier",
+        "dispatcher",
+        "safety department",
+        "broker or shipper where applicable",
+        "fleet-management, messaging, email, telephone, or collaboration service provider"
+      ],
+      "possible_data_categories": [
+        "load assignment and acceptance",
+        "route and appointment instructions",
+        "weather or road warnings",
+        "driver check calls and messages",
+        "delay, fatigue, maintenance, or safety reports",
+        "message delivery/read status and audit metadata where available"
+      ],
+      "preservation_questions": [
+        "Which channels, accounts, devices, groups, and custodians communicated with the driver?",
+        "Were messages exportable with timestamps, participants, edits, attachments, delivery/read state, and time zone?",
+        "What warning sources did leadership monitor, and how were warnings escalated to dispatchers and drivers?"
+      ],
+      "availability_note": "No single federal retention period covers every communication system or business record. Retention can vary by platform, contract, account setting, carrier policy, custodian action, and litigation hold.",
+      "federal_minimum_retention": null,
+      "source_type": "attorney-authored evidence category",
+      "source_url": null,
+      "last_verified": "2026-08-28"
+    },
+    {
+      "record_id": "camera-and-video-ecosystem",
+      "name": "Commercial-vehicle and third-party video ecosystem",
+      "system_class": "video and event evidence",
+      "custodian_examples": [
+        "motor carrier",
+        "camera/telematics provider",
+        "shipper or consignee",
+        "nearby business or residence",
+        "law enforcement or traffic-management agency"
+      ],
+      "possible_data_categories": [
+        "road-facing video",
+        "driver-facing video where lawfully deployed",
+        "triggered safety clips",
+        "continuous local recordings",
+        "event metadata",
+        "vehicle, warehouse, loading-dock, roadway, and nearby surveillance video"
+      ],
+      "preservation_questions": [
+        "Which cameras recorded continuously, on a trigger, locally, or in the cloud?",
+        "What pre-event and post-event windows, audio, overlays, sensor metadata, and original file hashes exist?",
+        "Were clips viewed, tagged, downloaded, shared, edited, deleted, or subject to a retention policy?"
+      ],
+      "availability_note": "Video retention is highly system- and custodian-specific. A clipped or transcoded copy may omit surrounding footage or metadata. Seek native exports and document chain of custody.",
+      "federal_minimum_retention": null,
+      "source_type": "attorney-authored evidence category",
+      "source_url": null,
+      "last_verified": "2026-08-28"
+    }
+  ]
+}
