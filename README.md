@@ -46,6 +46,10 @@ Each record includes its source URL and verification date. Product and regulator
 
 Jones Law P.A. / Jones Law Group is a Mississippi personal-injury practice based at 3417 North State Street, Jackson, Mississippi 39216. Telephone: (601) 272-2406. Canonical website: [Injured in Mississippi](https://www.injuredinmississippi.com/).
 
+## Also on Kaggle
+
+[Mississippi CMV Digital Evidence Guide](https://www.kaggle.com/datasets/jacob601injured/mississippi-cmv-digital-evidence-guide)
+
 ## License
 
 Original annotations are licensed under [CC BY 4.0](LICENSE).
