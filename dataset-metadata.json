@@ -1,0 +1,30 @@
+{
+  "title": "Mississippi CMV Digital Evidence Guide",
+  "subtitle": "Source-linked truck ELD, ADAS, telematics, and evidence fields",
+  "description": "An attorney-edited, source-linked guide to digital evidence systems and records that may be relevant after a Mississippi commercial-vehicle collision. Includes federal ELD record categories, Detroit Assurance, Bendix Wingman Fusion, Geotab GO9, Samsara Vehicle Gateways, dispatch communications, and video evidence. Product capabilities do not prove that a particular vehicle recorded or retained a field. The separate teaching scenarios are synthetic and are not real cases or firm statistics. Maintained by Jones Law P.A. / Jones Law Group in Jackson, Mississippi.\n\nGitHub: https://github.com/jacob-601injured/mississippi-cmv-digital-evidence",
+  "id": "jacob601injured/mississippi-cmv-digital-evidence",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "resources": [
+    {
+      "path": "data/mississippi_cmv_digital_evidence_dictionary.json",
+      "description": "Source-linked systems, records, limitations, and preservation-question dictionary."
+    },
+    {
+      "path": "data/synthetic_scenarios.json",
+      "description": "Explicitly synthetic scenarios for education and schema testing; no real cases or claims."
+    }
+  ],
+  "keywords": [
+    "law",
+    "transportation",
+    "traffic safety",
+    "automotive",
+    "united states"
+  ],
+  "expectedUpdateFrequency": "quarterly",
+  "userSpecifiedSources": "Official sources include [eCFR Title 49](https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B), [Detroit Assurance](https://www.demanddetroit.com/assurance/), [Bendix Wingman Fusion](https://www.bendix.com/en/products/advanced-driver-assistance-systems/bendix-wingman-fusion%E2%84%A2/), [Geotab GO9](https://support.geotab.com/go-devices/go9/doc/go9-document), and [Samsara Vehicle Gateway documentation](https://kb.samsara.com/hc/en-us/articles/4411518920205-Vehicle-Gateway-Models)."
+}

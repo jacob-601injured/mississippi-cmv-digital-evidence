@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset or its original annotations, please cite it as follows."
+type: dataset
+title: "Mississippi Commercial Truck Digital Evidence Guide"
+version: "0.1.0-draft"
+date-released: 2026-09-11
+repository-code: "https://github.com/jacob-601injured/mississippi-cmv-digital-evidence"
+authors:
+  - family-names: Jones
+    given-names: Baskin L.
+    affiliation: "Jones Law P.A. / Jones Law Group"
+license: CC-BY-4.0
+keywords:
+  - Mississippi
+  - commercial vehicle
+  - truck crash
+  - electronic logging device
+  - telematics
+  - advanced driver-assistance system
+  - digital evidence
